@@ -10,9 +10,6 @@
 		<cfargument name="theme_advanced_buttons2" default="forecolor,backcolor,separator,spellchecker,pastetext,pasteword,separator,search,replace,separator"> 
 		<cfargument name="theme_advanced_buttons3" default="tablecontrols,separator,media,advhr"> 
 		<cfargument name="theme_advanced_buttons1_add" default="fontselect,fontsizeselect"> 
-		<cfargument name="theme_advanced_buttons2_add_before" default="forecolor,backcolor,separator,spellchecker,pastetext,pasteword,separator,search,replace,separator"> 
-		<cfargument name="theme_advanced_buttons3_add_before" default="tablecontrols,separator"> 
-		<cfargument name="theme_advanced_buttons3_add" default="media,advhr"> 
 		<cfargument name="extended_valid_elements" default="br,a[name|href|target|title|onclick|class],img[class|src|border=0|alt|title|hspace|vspace|width|height|align|onmouseover|onmouseout|name|style],hr[class|width|size|noshade],font[face|size|color|style],span[class|align|style]"> 
 		<cfargument name="loadbase" default='1'> 
 		<cfargument name="content" default=''> 
