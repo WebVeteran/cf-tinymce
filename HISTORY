@@ -1,3 +1,7 @@
+09 04 01
+^ changed relative_urls to false (oops)
+^ changed convert_urls to true (oops)
+
 09 03 31
 - removed theme_advanced_buttons1_add
 ^ changed relative_urls to true
