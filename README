@@ -1,5 +1,5 @@
 A ColdFusion function to create tinyMCE instances - supports compression and multiple instances per page.
-It's a pretty good base with decent defaults.
+It's a pretty good base with decent defaults. For more information visit http://www.webveteran.com/blog/index.php/category/web-related-software/cf-tinymce/
 
 USAGE
 

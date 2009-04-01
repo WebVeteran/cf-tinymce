@@ -1,0 +1,7 @@
+09 03 31
+- removed theme_advanced_buttons1_add
+^ changed relative_urls to true
+^ changed convert_urls to false
+
+09 03 27
+initial release
