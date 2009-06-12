@@ -10,7 +10,6 @@
 		<cfargument name="theme_advanced_buttons2" default="forecolor,backcolor,separator,spellchecker,pastetext,pasteword,separator,search,replace,separator"> 
 		<cfargument name="theme_advanced_buttons3" default="tablecontrols,separator,media,advhr"> 
 		<cfargument name="extended_valid_elements" default="br,a[name|href|target|title|onclick|class],img[class|src|border=0|alt|title|hspace|vspace|width|height|align|onmouseover|onmouseout|name|style],hr[class|width|size|noshade],font[face|size|color|style],span[class|align|style]"> 
-		<cfargument name="loadbase" default='1'> 
 		<cfargument name="content" default=''> 
 		<cfargument name="csswidth" default='520px'> 
 		<cfargument name="cssheight" default='350px'>
@@ -24,7 +23,7 @@
 		
 		<textarea name='#arguments.element#' id='#arguments.element#' style='width:#csswidth#; height:#cssheight#; visibility:hidden;'>#arguments.content#</textarea>
 	
-		<cfif loadbase eq 1>
+		<cfif not isdefined("Arguments.VScope.cftinymcebaseloaded")>
 			<cfsavecontent variable="tinyHead">
 			<script type="text/javascript" src="/includes/js/tiny_mce/tiny_mce<cfif arguments.compress eq 1>_gzip</cfif>.js"></script>
 			<script language="javascript" type="text/javascript">
@@ -39,6 +38,7 @@
 			</script>
 			</cfsavecontent>
 			<cfhtmlhead text="#variables.tinyHead#">
+			<cfset Arguments.VScope.cftinymcebaseloaded="1">
 		</cfif>	
 			
 			<script language="javascript" type="text/javascript">

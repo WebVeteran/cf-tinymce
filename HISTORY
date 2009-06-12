@@ -1,3 +1,6 @@
+09 06 12
++ automatically handles multiple instance per page - no need (or use) for the 'loadbase' argument
+
 09 04 01
 ^ changed relative_urls to false (oops)
 ^ changed convert_urls to true (oops)
