@@ -1,6 +1,7 @@
 <cfcomponent> 
 
 	<cffunction name="tinymce">
+		<cfargument name="Vscope" Required=true hint="Used for auto base=loaded detection">
 		<cfargument name="cssfile" default="http://www.nikonusa.com/static/css/main.css">
 		<cfargument name="theme_advanced_styles" default=''> 
 		<cfargument name="theme" default="advanced">
