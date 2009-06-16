@@ -1,7 +1,6 @@
 <cfcomponent> 
 
 	<cffunction name="tinymce">
-		<cfargument name="Vscope" Required=true hint="Used for auto base=loaded detection">
 		<cfargument name="cssfile" default="http://www.nikonusa.com/static/css/main.css">
 		<cfargument name="theme_advanced_styles" default=''> 
 		<cfargument name="theme" default="advanced">
@@ -24,7 +23,7 @@
 		
 		<textarea name='#arguments.element#' id='#arguments.element#' style='width:#csswidth#; height:#cssheight#; visibility:hidden;'>#arguments.content#</textarea>
 	
-		<cfif not isdefined("Arguments.VScope.cftinymcebaseloaded")>
+		<cfif not isdefined("Request.cftinymcebaseloaded")>
 			<cfsavecontent variable="tinyHead">
 			<script type="text/javascript" src="/includes/js/tiny_mce/tiny_mce<cfif arguments.compress eq 1>_gzip</cfif>.js"></script>
 			<script language="javascript" type="text/javascript">
@@ -39,7 +38,7 @@
 			</script>
 			</cfsavecontent>
 			<cfhtmlhead text="#variables.tinyHead#">
-			<cfset Arguments.VScope.cftinymcebaseloaded="1">
+			<cfset Request.cftinymcebaseloaded="1">
 		</cfif>	
 			
 			<script language="javascript" type="text/javascript">

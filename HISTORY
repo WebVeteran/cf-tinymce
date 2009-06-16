@@ -1,3 +1,8 @@
+09 06 16
+^ removed the required Vscope argument for automatic handling multiple instance per page
++ it now uses the Request scope, so it is truly automatic
++ it is now backwards compatible again, Vscope and loadbase are ignored
+
 09 06 12
 + automatically handles multiple instance per page - no need (or use) for the 'loadbase' argument
 
