@@ -1,3 +1,6 @@
+12 02 16
+Made some changes to the default arguments
+
 09 06 16
 ^ removed the required Vscope argument for automatic handling multiple instance per page
 + it now uses the Request scope, so it is truly automatic
