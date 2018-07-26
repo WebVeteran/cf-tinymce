@@ -21,7 +21,7 @@ The above is the simplest way to display tinyMCE, however there are 22 options t
 
 ## Live Demo
 
-For a live demo visit http://wvcsm.webveteran.net/ .
+For a live demo visit https://gwwcms.gravitywebworks.com/ .
 
 ## Screenshot
 
